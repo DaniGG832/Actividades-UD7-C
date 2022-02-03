@@ -7,9 +7,7 @@
         console.log(promesa);
         let response = await promesa;
         console.log(response);
-        let data = await response.json();
-        console.log(data);
-        return data;
+        return response.json();
 
     } catch (error) {
         console.error('Error:', error.message);
